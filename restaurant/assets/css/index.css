@@ -1,0 +1,46 @@
+header {
+  padding: 20px 0;
+}
+
+section {
+  min-height: 100px;
+}
+
+footer {
+  min-height: 300px;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.bg-dark {
+  background-color: #08121C;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.top-menu {
+  display: inline-flex;
+  gap: 60px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-menu a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.logo span:nth-child(1) {
+  color: red;
+}
