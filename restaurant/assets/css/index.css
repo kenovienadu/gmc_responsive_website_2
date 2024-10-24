@@ -204,7 +204,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .contact-us .left .group {
@@ -236,7 +235,7 @@ h2 {
 
 .contact-us input {
   display: block;
-  width: 400px;
+  width: 300px;
   height: 50px;
   padding: 10px;
   margin-bottom: 30px;
@@ -247,7 +246,7 @@ h2 {
 
 .contact-us textarea {
   display: block;
-  width: 400px;
+  width: 300px;
   height: 200px;
   padding: 10px;
   margin-bottom: 30px;
@@ -260,6 +259,16 @@ h2 {
   width: 100%;
 }
 
+@media screen and (min-width: 650px) {
+  .contact-us input {
+    width: 400px;
+  }
+
+  .contact-us textarea {
+    width: 400px;
+  }
+}
+
 /* Footer */
 
 footer .inner {
@@ -267,12 +276,12 @@ footer .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 footer .inner .icons-wrapper {
   display: inline-flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 footer .icon {
