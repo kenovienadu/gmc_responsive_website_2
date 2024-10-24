@@ -61,7 +61,7 @@ const loadProducts = () => {
   const productCards = items.map(product => {
     const card = document.createElement('div');
     card.innerHTML = `
-      <div class="col-md-3" >
+      <div class="col-sm-6 col-md-3" >
         <div class="menu-item">
           <div>
             <img src="${product.image}" alt="">
