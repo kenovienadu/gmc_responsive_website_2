@@ -1,0 +1,300 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+button {
+  border-radius: 0px;
+  min-height: 40px;
+  outline: none;
+  border: none;
+  padding: 20px 40px;
+}
+
+h2 {
+  line-height: 40px;
+}
+
+.bg-dark {
+  background-color: #08121C;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.top-menu {
+  display: inline-flex;
+  gap: 60px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-menu a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo span:nth-child(1) {
+  color: rgb(178, 9, 9);
+}
+
+.hero {
+  border-radius: 0;
+  background-image: url('../img/city-background.jpg');
+  object-fit: cover;
+  padding: 0;
+}
+
+.text-white {
+  color: whitesmoke;
+}
+
+.hero .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.402);
+  border-radius: inherit;
+}
+
+.hero .inner > div {
+  text-align: center;
+  width: 90%;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 800px) {
+  .hero .inner {
+    height: 800px;
+  }
+
+  .hero .inner > div {
+    max-width: 1000px;
+  }
+
+  .hero h2 {
+    font-size: 90px;
+    line-height:100px;
+  }
+
+  .hero p {
+    font-size: 26px;
+  }
+}
+
+.primary-button {
+  background-color: #F56960;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 40px;
+}
+
+/* MENU */
+.menu {
+  padding: 50px 0;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.menu img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in;
+}
+
+.menu-item {
+  padding: 0;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.menu-item:hover img {
+  scale: 1.1;
+}
+
+/* ABOUT US */
+.about-us {
+  min-height: 300px;
+  padding: 40px;
+}
+
+.about-us p {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-us img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.about-us .content {
+  padding-top: 20px;
+  /* padding-left: 30px; */
+}
+
+@media screen and (min-width: 600px) {
+  .about-us  {
+    padding: 100px;
+  }
+
+  .about-us img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .about-us .content {
+    padding-top: 70px;
+    padding-left: 30px;
+  }
+
+  .about-us p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+
+/* Contact Section */
+.contact-us {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.contact-us .row > div {
+  padding: 50px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-us .left .group {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.contact-us i {
+  color: red;
+  font-size: 24px;
+}
+
+.contact-us .info-title {
+  font-weight: 600;
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.contact-us .right {
+  background-color: #E4E4E4;
+  align-items: center;
+}
+
+.contact-us p {
+  padding-left: 0px;
+}
+
+.contact-us input {
+  display: block;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+
+.contact-us textarea {
+  display: block;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+
+.contact-us .right button {
+  width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+  .contact-us input {
+    width: 400px;
+  }
+
+  .contact-us textarea {
+    width: 400px;
+  }
+}
+
+/* Footer */
+
+footer .inner {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer .inner .icons-wrapper {
+  display: inline-flex;
+  gap: 20px;
+}
+
+footer .icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+}
