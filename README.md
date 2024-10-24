@@ -18,15 +18,12 @@ Each directory likely has its own subdirectories and files, depending on the spe
 
 ### Usage
 
-**To run the restaurant website:**
+**To run the project:**
 
-1. Navigate to the `restaurant` directory.
+1. Navigate to the `src` directory.
 2. Follow the project's specific instructions for starting the development server or building the website.
-
-**To run the travel agency website:**
-
-1. Navigate to the `travel_agency` directory.
-2. Follow the project's specific instructions for starting the development server or building the website.
+3. The restaurant website is in at `src/restaurant.html`
+4. The agency website is in at `src/agency.html`
 
 ### Technologies and Frameworks
 
