@@ -151,6 +151,12 @@ h2 {
   scale: 1.1;
 }
 
+.accordion-body a {
+  text-decoration: none;
+  color: #F56960 !important;
+  font-weight: 600;
+}
+
 /* ABOUT US */
 .about-us {
   min-height: 300px;
