@@ -26,26 +26,26 @@ const items = [
 ]
 
 
-const loadProducts = () => {
-  const productsSectionsWrapper = document.querySelector('.destinations-grid');
+const loadDestinations = () => {
+  const gridContainer = document.querySelector('.destinations-grid');
 
-  if (!productsSectionsWrapper) {
-    console.error('products section invalid');
+  if (!gridContainer) {
+    console.error('container not found');
     return;
   }
 
-  const productCards = items.map(product => {
+  const cards = items.map(item => {
     const card = document.createElement('div');
 
     card.innerHTML = `
       <div class="card">
-        <img src="${product.image}" class="card-img-top" alt="">
+        <img src="${item.image}" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">
-            ${product.title}
+            ${item.title}
           </h5>
           <p class="card-text">
-            ${product.description}
+            ${item.description}
           </p>
           <button class="primary-button">
             Learn More
@@ -57,7 +57,7 @@ const loadProducts = () => {
     return card;
   });
 
-  productsSectionsWrapper.append(...productCards)
+  gridContainer.append(...cards)
 }
 
-loadProducts();
+loadDestinations();
