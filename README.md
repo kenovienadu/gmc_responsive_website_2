@@ -30,6 +30,7 @@ Each directory likely has its own subdirectories and files, depending on the spe
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 
 ### Contributing
 
